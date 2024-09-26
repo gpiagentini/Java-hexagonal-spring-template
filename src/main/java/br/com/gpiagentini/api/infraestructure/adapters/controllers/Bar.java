@@ -1,4 +1,4 @@
-package br.com.gpiagentini.api.adapters.controllers;
+package br.com.gpiagentini.api.infraestructure.adapters.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

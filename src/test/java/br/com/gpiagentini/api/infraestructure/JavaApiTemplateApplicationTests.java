@@ -1,4 +1,4 @@
-package br.com.gpiagentini.api;
+package br.com.gpiagentini.api.infraestructure;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

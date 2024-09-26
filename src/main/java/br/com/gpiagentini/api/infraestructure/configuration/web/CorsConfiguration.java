@@ -1,4 +1,4 @@
-package br.com.gpiagentini.api.configuration.web;
+package br.com.gpiagentini.api.infraestructure.configuration.web;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
