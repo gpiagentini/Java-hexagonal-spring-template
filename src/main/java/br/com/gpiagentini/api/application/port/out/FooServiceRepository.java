@@ -5,7 +5,7 @@ import br.com.gpiagentini.api.domain.model.Foo;
 import java.util.List;
 
 public interface FooServiceRepository {
-    void save(Foo foo);
+    Foo save(Foo foo);
     Foo getById(Long id);
     List<Foo> getAll();
 }

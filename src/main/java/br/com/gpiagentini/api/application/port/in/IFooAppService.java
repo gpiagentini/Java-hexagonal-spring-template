@@ -6,5 +6,5 @@ import java.util.List;
 public interface IFooAppService {
     Foo getFooById(Long id);
     List<Foo> getFooList();
-    void createFoo(String description);
+    Foo createFoo(String description);
 }

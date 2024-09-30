@@ -28,9 +28,10 @@ public class FooAppService implements IFooAppService {
     }
 
     @Override
-    public void createFoo(String description) {
+    public Foo createFoo(String description) {
         var foo = new Foo(description);
         if(fooService.isValidFoo(foo))
-            fooServiceRepository.save(foo);
+            return fooServiceRepository.save(foo);
+        return null;
     }
 }

@@ -20,9 +20,10 @@ public class JpaFooRepository implements FooServiceRepository {
 
 
     @Override
-    public void save(Foo foo) {
+    public Foo save(Foo foo) {
         var fooDataMapper = FooMapper.toJpa(foo);
-        fooRepository.save(fooDataMapper);
+        fooDataMapper = fooRepository.save(fooDataMapper);
+        return FooMapper.toDomain(fooDataMapper);
     }
 
     @Override
