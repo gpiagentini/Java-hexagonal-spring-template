@@ -10,8 +10,8 @@ This is a template project for Spring Boot applications designed using **Hexagon
 - **Architecture**: Hexagonal Architecture (Ports & Adapters)
 
 ## Pendencies
-- Implement Full CRUD
-- Implement Kafka Topics (Another Branch)
+- Implement Delete
+- Implement async methods
 
 ## Project Structure
 
