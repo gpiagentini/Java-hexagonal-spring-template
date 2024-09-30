@@ -9,7 +9,7 @@ This is a template project for Spring Boot applications designed using **Hexagon
 - **Build Tool**: Maven
 - **Architecture**: Hexagonal Architecture (Ports & Adapters)
 
-## Penencies
+## Pendencies
 - Implement Full CRUD
 - Implement Kafka Topics (Another Branch)
 
