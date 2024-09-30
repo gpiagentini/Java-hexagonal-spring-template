@@ -3,6 +3,8 @@ package br.com.gpiagentini.api.infraestructure.adapters.controllers;
 import br.com.gpiagentini.api.application.port.in.IFooAppService;
 import br.com.gpiagentini.api.infraestructure.dto.CreateFooData;
 import br.com.gpiagentini.api.infraestructure.dto.FooRequestData;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
@@ -17,6 +19,7 @@ import java.util.List;
 @Validated
 @RestController("Foo")
 @RequestMapping("/api/v1/foo")
+@Tag(name = "Foo Controller", description = "Foo related operations.")
 public class FooController {
 
     private final IFooAppService fooAppService;
@@ -25,6 +28,7 @@ public class FooController {
         this.fooAppService = fooAppService;
     }
 
+    @Operation(summary = "Create new Foo", description = "Intended to create a new Foo.")
     @PostMapping
     @Transactional
     public ResponseEntity<FooRequestData> createFoo(@RequestBody @Valid CreateFooData createFooData, UriComponentsBuilder uriBuilder) {
@@ -33,6 +37,7 @@ public class FooController {
         return ResponseEntity.created(uri).body(new FooRequestData(foo));
     }
 
+    @Operation(summary = "Get Foo by id", description = "Intended to retrieve a new Foo, from a given id.")
     @GetMapping("/{id}")
     public ResponseEntity<FooRequestData> getFoo(@Positive(message = "Id must be greater than 0.") @PathVariable Long id) {
         var foo = fooAppService.getFooById(id);
@@ -40,6 +45,7 @@ public class FooController {
         return ResponseEntity.ok(fooRequestData);
     }
 
+    @Operation(summary = "Get Foo list", description = "Intended to retrieve a list of available Foo's.")
     @GetMapping
     public ResponseEntity<List<FooRequestData>> getAllFoo() {
         var fooList = fooAppService.getFooList();
