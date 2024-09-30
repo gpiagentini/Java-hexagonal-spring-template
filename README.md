@@ -5,16 +5,13 @@ This is a template project for Spring Boot applications designed using **Hexagon
 ## Project Overview
 
 - **Framework**: Spring Boot 3.x
-- **Java Version**: 17
+- **Java Version**: 21
 - **Build Tool**: Maven
 - **Architecture**: Hexagonal Architecture (Ports & Adapters)
 
 ## Penencies
 - Implement Full CRUD
-- Implement Http Request/Responses
-- Implement Error treatment
 - Implement Kafka Topics (Another Branch)
-- Se default values
 
 ## Project Structure
 
