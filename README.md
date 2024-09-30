@@ -55,5 +55,5 @@ set SPRING_PROFILES_ACTIVE=<env>
 
 Powershell
 ```
-$env:SPRING_PROFILES_ACTIVE="prod"
+$env:SPRING_PROFILES_ACTIVE="<env>"
 ```
