@@ -39,7 +39,5 @@ public class JpaFooRepository implements FooServiceRepository {
     }
 }
 
-
-
 interface FooRepository extends JpaRepository<FooDataMapper, Long> {
 }
