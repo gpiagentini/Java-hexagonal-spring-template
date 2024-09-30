@@ -29,3 +29,31 @@ src/
      │       │   └── persistence/       # Repositories and data mappers
      └── resources/
          ├── application.yml            # Spring Boot configuration
+````
+
+## Managing Environments
+
+In this template, we have two possible environments (`dev` and `prod`).
+To alternate between our environments, we need to use the **environment variable** **SPRING_PROFILES_ACTIVE**.
+
+> [!NOTE]
+> The following commands will only change your environment variable for the **current terminal** session. It's not a permanent approach.
+
+### Linux
+
+cmd
+```
+export SPRING_PROFILES_ACTIVE=<env>
+```
+
+### Windows
+
+cmd
+```
+set SPRING_PROFILES_ACTIVE=<env>
+```
+
+Powershell
+```
+$env:SPRING_PROFILES_ACTIVE="prod"
+```
