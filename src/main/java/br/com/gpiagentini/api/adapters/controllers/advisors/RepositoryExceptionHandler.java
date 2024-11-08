@@ -1,4 +1,4 @@
-package br.com.gpiagentini.api.infraestructure.advisors;
+package br.com.gpiagentini.api.adapters.controllers.advisors;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;

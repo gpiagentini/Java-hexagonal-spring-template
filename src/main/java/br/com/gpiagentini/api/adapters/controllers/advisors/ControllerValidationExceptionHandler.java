@@ -1,6 +1,6 @@
-package br.com.gpiagentini.api.infraestructure.advisors;
+package br.com.gpiagentini.api.adapters.controllers.advisors;
 
-import br.com.gpiagentini.api.infraestructure.dto.ValidatioErrorData;
+import br.com.gpiagentini.api.application.dto.ValidatioErrorData;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;

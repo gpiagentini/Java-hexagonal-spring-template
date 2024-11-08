@@ -1,8 +1,8 @@
-package br.com.gpiagentini.api.infraestructure.adapters.controllers;
+package br.com.gpiagentini.api.adapters.controllers;
 
 import br.com.gpiagentini.api.application.port.in.IFooAppService;
-import br.com.gpiagentini.api.infraestructure.dto.CreateFooData;
-import br.com.gpiagentini.api.infraestructure.dto.FooRequestData;
+import br.com.gpiagentini.api.application.dto.CreateFooData;
+import br.com.gpiagentini.api.application.dto.FooRequestData;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;

@@ -1,4 +1,4 @@
-package br.com.gpiagentini.api.infraestructure.configuration.web;
+package br.com.gpiagentini.api.infraestructure.configuration.docs;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

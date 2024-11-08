@@ -1,4 +1,4 @@
-package br.com.gpiagentini.api.infraestructure.configuration.web;
+package br.com.gpiagentini.api.infraestructure.configuration.application;
 
 import br.com.gpiagentini.api.application.port.in.IFooAppService;
 import br.com.gpiagentini.api.application.port.out.FooServiceRepository;
